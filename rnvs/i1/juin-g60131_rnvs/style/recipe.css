@@ -1,0 +1,51 @@
+@font-face {
+    font-family: "alluraregular";
+    src: url("../font/allura/allura-regular-webfont.woff2")
+            format("woff2"),
+        url("../font/allura/allura-regular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+#recipe_container {
+    height: 100vh;
+}
+#grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "H1 H1"
+        "L2 R2"
+        "F3 F3";
+    margin: auto;
+    height: 500px;
+    width: 700px;
+}
+#title {
+    grid-area: H1;
+    font-family: "alluraregular";
+    font-size: 200%;
+    font-weight: bold;
+    margin-left: 40px;
+    margin-bottom: auto;
+}
+#image_recipe {
+    grid-area: L2;
+    border-radius: 10%;
+    margin-left: 40px;
+    box-shadow: 5px 5px 10px 5px rgb(128, 128, 128, 50%);
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#ingredients {
+    grid-area: R2;
+    align-self: start;
+    font-family: "alluraregular";
+    font-size: 125%;
+    margin-bottom: auto;
+}
+#etapes {
+    grid-area: F3;
+    font-family: "alluraregular";
+    font-size: 140%;
+}

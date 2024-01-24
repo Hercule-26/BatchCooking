@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="../style/planning.css" />
+        <link rel="stylesheet" href="../style/cards.css" />
+        <link rel="stylesheet" href="../style/calendar.css" />
+        <title>planning</title>
+    </head>
+    <body>
+        <!-- rnvs : planning-container plutôt que main_container -->
+        <section id="main_container">
+            <section id="all_container">
+                <h1 id="title">BatchCooking.esi</h1>
+                <section id="calendar_container">
+                    <section id="container_jour">
+                        <section id="flex">
+                            <div class="jours">
+                                Lundi
+                                <section class="repas_container">
+                                    <span class="repas_list"
+                                        >Lasagne</span
+                                    >
+                                    <span class="repas_list">Sushi</span>
+                                </section>
+                            </div>
+
+                            <div class="jours">
+                                Mardi
+                                <section class="repas_container">
+                                    <span class="repas_list">Riz</span>
+                                    <span class="repas_list">Chili</span>
+                                </section>
+                            </div>
+
+                            <div class="jours">Mercredi</div>
+
+                            <div class="jours">Jeudi</div>
+
+                            <div class="jours">Vendredi</div>
+
+                            <div class="jours">Samedi</div>
+
+                            <div class="jours">
+                                Dimanche
+                                <section class="repas_container">
+                                    <span class="repas_list">Riz</span>
+                                    <span class="repas_list"
+                                        >Lasagne</span
+                                    >
+                                    <span class="repas_list">Chili</span>
+                                    <span class="repas_list">Sushi</span>
+                                </section>
+                            </div>
+                        </section>
+                    </section>
+                </section>
+
+                <button id="button_shopping_list">Liste de course</button>
+
+                <section id="cards_container">
+                    <section id="container">
+                        <div id="card_Chili" class="cards">
+                            <img
+                                src="../img/cards/Chili.jfif"
+                                alt="Chili"
+                                title="Image de Chili"
+                            />
+
+                            <section class="buttons_position">
+                                <button>
+                                    <img
+                                        class="logos_buttons"
+                                        src="../img/cards/Logo-info.jfif"
+                                        alt="Information"
+                                        title="Information"
+                                    />
+                                </button>
+                                <button>
+                                    <img
+                                        class="logos_buttons"
+                                        src="../img/cards/Logo-planning.jfif"
+                                        alt="Planning"
+                                        title="Planning"
+                                    />
+                                </button>
+                            </section>
+
+                            <p class="title_cards">Chili</p>
+                            <section class="informations">
+                                <div class="proteines">Protéines</div>
+                                <div class="legumes">Légumes</div>
+                            </section>
+                        </div>
+
+                        <div id="card_Riz" class="cards">
+                            <img
+                                src="../img/cards/Riz.jfif"
+                                alt="Riz"
+                                title="Bol de Riz"
+                            />
+
+                            <section class="buttons_position">
+                                <button>
+                                    <img
+                                        class="logos_buttons"
+                                        src="../img/cards/Logo-info.jfif"
+                                        alt="Information"
+                                        title="Information"
+                                    />
+                                </button>
+                                <button>
+                                    <img
+                                        class="logos_buttons"
+                                        src="../img/cards/Logo-planning.jfif"
+                                        alt="Planning"
+                                        title="Planning"
+                                    />
+                                </button>
+                            </section>
+
+                            <p class="title_cards">Riz</p>
+                            <section class="informations">
+                                <div class="proteines">Protéines</div>
+                                <div class="legumes">Légumes</div>
+                            </section>
+                        </div>
+
+                        <div
+                            id="card_Lasagne"
+                            class="cards"
+                            class="scheduled"
+                            class="selected"
+                        >
+                            <img
+                                src="../img/cards/Lasagne.jfif"
+                                alt="Lasagne"
+                                title="Lasagne"
+                            />
+
+                            <section class="buttons_position">
+                                <button>
+                                    <img
+                                        class="logos_buttons"
+                                        src="../img/cards/Logo-info.jfif"
+                                        alt="Information"
+                                        title="Information"
+                                    />
+                                </button>
+                                <button>
+                                    <img
+                                        class="logos_buttons"
+                                        src="../img/cards/Logo-planning.jfif"
+                                        alt="Planning"
+                                        title="Planning"
+                                    />
+                                </button>
+                            </section>
+
+                            <p class="title_cards">Lasagne</p>
+                            <section class="informations">
+                                <div class="proteines">Protéines</div>
+                                <div class="legumes">Légumes</div>
+                                <div class="feculents">Féculents</div>
+                            </section>
+                        </div>
+
+                        <div
+                            id="card_Sushi"
+                            class="cards"
+                            class="scheduled"
+                            class="selected"
+                        >
+                            <img
+                                src="../img/cards/Sushi.jfif"
+                                alt="Sushi"
+                                title="Sushi"
+                            />
+
+                            <section class="buttons_position">
+                                <button>
+                                    <img
+                                        class="logos_buttons"
+                                        src="../img/cards/Logo-info.jfif"
+                                        alt="Information"
+                                        title="Information"
+                                    />
+                                </button>
+                                <button>
+                                    <img
+                                        class="logos_buttons"
+                                        src="../img/cards/Logo-planning.jfif"
+                                        alt="Planning"
+                                        title="Planning"
+                                    />
+                                </button>
+                            </section>
+
+                            <p class="title_cards">Sushi</p>
+                            <section class="informations">
+                                <div class="proteines">Protéines</div>
+                                <div class="legumes">Légumes</div>
+                            </section>
+                        </div>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </body>
+</html>

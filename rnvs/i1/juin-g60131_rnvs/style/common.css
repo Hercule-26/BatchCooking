@@ -1,0 +1,20 @@
+/* rnvs : ce fichier n'est pas commun à tous les composants : cards.html, calendar.html et planning.html ne l'utilisent pas */
+#button_retour {
+    position: fixed;
+}
+#button_retour,
+#image_fleche {
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    border-radius: 50%;
+}
+#button_retour:hover {
+    transition: 1s;
+    margin-left: 20px;
+}
+#image_fleche:hover {
+    transition: 0.5s;
+    background-color: rgb(228, 219, 219);
+}

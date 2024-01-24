@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/common.css">
+    <link rel="stylesheet" href="style/planning.css">
+    <link rel="stylesheet" href="style/recipe.css">
+    <link rel="stylesheet" href="style/shopping-list.css">
+    <link rel="stylesheet" href="style/calendar.css">
+    <link rel="stylesheet" href="style/cards.css">
+    <title>Planning</title>
+    <script src="script/navigation.js" defer></script>
+    <script src="script/index.js"></script>
+</head>
+<body>
+    <div id="planning-container">
+        <section id="main_container">
+            <header><h1 id="big_title">BatchCooking.esi</h1></header>
+            <section id="all_container">
+                <section id="calendar_container">
+                    <section id="container_jour">
+                        <section id="flex">
+                            <div class="jours">
+                                Lundi
+                                <section class="repas_container">
+                                </section>
+                            </div>
+                            
+                            <div class="jours">
+                                Mardi
+                                <section class="repas_container">
+                                </section>
+                            </div>
+                            
+                            <div class="jours">
+                                Mercredi
+                                <section class="repas_container"></section>
+                            </div>
+                            
+                            <div class="jours">
+                                Jeudi
+                                <section class="repas_container"></section>
+                            </div>
+                            
+                            <div class="jours">
+                                Vendredi
+                                <section class="repas_container"></section>
+                            </div>
+                            
+                            <div class="jours">
+                                Samedi
+                                <section class="repas_container"></section>
+                            </div>
+                
+                            <div class="jours">
+                                Dimanche
+                                <section class="repas_container"></section>
+                            </div>
+                        </section>
+                    </section>
+                </section>
+    
+                <button id="button_shopping_list">Liste de course</button>
+    
+                <section id="cards_container">
+                    <section id="container_by_card">
+
+                    </section>
+                </section> 
+            </section>
+        </section>
+    </div>
+
+    <div id="recipe-container">
+        <button class="button_retour"><img class="image_fleche" src="style/img/retour.png" alt="Retour" title="Retour"></button>
+        <section id="recipe_container">
+            <section id="grid_recipe">
+                <h2 id="recipe_title"></h2>
+                <div id="image_bloc">
+                    <img id="image_recipe" src="img/recipes-pictures/Chili.jfif" alt="Lasagne" title="Lasagne">
+                </div>
+                <ul id="ingredients">
+                </ul>
+                <ol id="etapes">
+                </ol>
+            </section>
+        </section>
+    </div>
+
+    <div id="shopping-list-container">
+        <button class="button_retour"><img class="image_fleche" src="style/img/retour.png" alt="Retour" title="Retour"></button>
+        <span id="title_list">
+            <h1>Liste de courses</h1>
+        </span>
+        <section id="grid_shopping_list">
+            <div id="list">
+            </div>
+        </section>
+    </div>
+
+    <template id="card">
+        <section id="container_by_card">
+            <div id="card_Chili" class="cards" class="scheduled" class="selected">
+                    <img src="img/cards/Chili.jfif" alt="Chili" title="Image de Chili">
+                    
+                    <section class="buttons_position">
+                        <button class="show_recipe"><img class="logos_buttons" src="img/cards/Logo-info.jfif" alt="Information" title="Information"></button>
+                        <button class="ajout_planning"><img class="logos_buttons" src="img/cards/Logo-planning.jfif" alt="Planning" title="Planning"></button>
+                    </section>
+    
+                <p class="title_cards">Chili</p>
+                <section class="informations">
+                    <div class="proteines">Protéines</div>
+                    <div class="legumes">Légumes</div>
+                </section>
+            </div>
+        </section>
+    </template>
+</body>
+</html>

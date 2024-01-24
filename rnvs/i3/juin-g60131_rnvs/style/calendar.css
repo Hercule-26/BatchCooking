@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'alex_brushregular';
+    src: url('../font/AlexBrush/alexbrush-regular-webfont.woff2') format('woff2'),
+         url('../font/AlexBrush/alexbrush-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+#calendar_jour{
+    min-height: 100vh;
+    background-image: url(../style/img/Background-Feuilles.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+#flex{
+    display: flex;
+    justify-content: space-evenly; /*auto à la page mais centrer aussi*/
+    flex-wrap: wrap;   
+}
+.jours{
+    font-family: 'alex_brushregular';
+    font-size: 175%;
+    color: rgb(163, 154, 154);
+    font-weight: bold; /*Mettre en gras*/
+    padding: 5px;
+    margin: 5px;
+    width: 120px;
+    height: 220px;
+    border-radius: 10%;
+    
+}
+.repas_container{  /* Les "Test" */
+    display: flex;
+    flex-direction: column;
+    font-weight: normal;
+    margin-left: 15px; 
+}
+.repas_list{
+    border-radius: 10%;
+    padding-left: 2px;
+}
+
+.jours:hover{
+    transition: 0.5s;
+    background-color: rgba(252, 251, 251, 10%);
+}
+.repas_list:hover{
+    transition: 0.5s;
+    color: black;
+    background-color: rgb(191, 185, 185, 40%);
+}
+body{
+   margin: 0%;
+}

@@ -1,0 +1,45 @@
+body {
+    /* ce qui suit pour occuper 100 % de la fenêtre... mais j'ai un ascenseur => 97vh (? moche) */
+    height: 97vh;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "content"
+        "footer";
+    grid-template-rows: auto 1fr auto;
+    gap: 0.5em;
+}
+
+header {
+    grid-area: header;
+    background-color: darkgray;
+}
+
+footer {
+    grid-area: footer;
+    background-color: darkgray;
+    text-align: right;
+}
+
+main {
+    grid-area: content;
+    background-color: azure;
+}
+
+.operation,
+.answer {
+    margin: 2em;
+}
+
+.controls {
+    margin: 1em;
+    display: flex;
+    column-gap: 2em;
+}
+
+/* todo : ajouter ici */
+.hide {
+    visibility: hidden;
+    display: none;
+}
+

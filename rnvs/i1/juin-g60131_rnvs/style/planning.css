@@ -1,0 +1,76 @@
+@font-face {
+    font-family: "alex_brushregular";
+    src: url("alexbrush-regular-webfont.woff2") format("woff2"),
+        url("alexbrush-regular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "kaguraregular";
+    src: url("../font/Kagura/kagura-webfont.woff2") format("woff2"),
+        url("../font/Kagura/kagura-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+#all_container {
+    margin: 0px 10px 0px 10px;
+    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: 690px auto;
+    grid-template-rows: auto 630px auto;
+    grid-template-areas:
+        "title title"
+        "calendar cards"
+        "shopping cards";
+    gap: 10px;
+}
+#button_shopping_list {
+    grid-area: shopping;
+    background-image: url(../style/img/Background-List.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    border-radius: 15px;
+    font-family: "alex_brushregular";
+    color: antiquewhite;
+    font-size: 275%;
+    height: 200px;
+}
+#button_shopping_list:hover {
+    transition: 0.2s;
+    opacity: 0.7;
+}
+#title {
+    text-align: center;
+    grid-area: title;
+    background-color: rgb(46, 46, 46);
+    color: rgb(163, 154, 154);
+    margin: 0%;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 250%;
+    border-radius: 5px;
+}
+#calendar_container {
+    background-image: url(../style/img/Background-Feuilles.jpg);
+    background-size: cover;
+    grid-area: calendar;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+#cards_container {
+    grid-area: cards;
+    background-color: white;
+    border-radius: 10px;
+}
+#main_container {
+    min-height: 100vh;
+    background-color: grey;
+}
+/* rnvs : ceci devrait se trouver dans common.css => petite pénalité */
+body {
+    margin: 0%;
+}

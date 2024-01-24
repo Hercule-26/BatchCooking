@@ -1,0 +1,103 @@
+/* rnvs : dans html, il y a une classe scheduled, mais elle n'est pas utilisée ici. donc pas de prise en charge des cartes sélectionnées ou planifiées */
+
+@font-face {
+    font-family: "kaguraregular";
+    src: url("../font/Kagura/kagura-webfont.woff2") format("woff2"),
+        url("../font/Kagura/kagura-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "scratchy_regularregular";
+    src: url("../font/Scratchy/scratchy-webfont.woff2") format("woff2"),
+        url("../font/Scratchy/scratchy-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+#container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /*Permet de Mettre le contenue par rapport à
+                    la taille de la page et donc de passer à la ligne*/
+}
+.title_cards {
+    font-family: "scratchy_regularregular";
+    font-size: 3em;
+    padding-left: 10px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+.cards {
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px 5px rgb(128, 128, 128, 30%);
+    width: auto;
+    height: 400px;
+    margin: 15px;
+    transition: 0.5s;
+    background-color: white;
+    overflow: hidden;
+}
+.cards:hover,
+#card_Lasagne:hover,
+#card_Sushi:hover {
+    box-shadow: 5px 5px 10px 5px grey;
+}
+#card_Lasagne {
+    box-shadow: 5px 5px 10px 5px rgb(236, 203, 58);
+}
+#card_Sushi {
+    box-shadow: 5px 5px 10px 5px rgb(6, 24, 74);
+}
+.buttons_position {
+    position: absolute;
+    top: 3%;
+    right: 4%;
+    z-index: 1; /*Choisir la chouche à la qu'elle le boutton (ou autre chose) vas être*/
+}
+button {
+    background: none;
+    border: none;
+    padding: 0;
+}
+.logos_buttons {
+    width: 30px;
+    height: 30px;
+}
+img {
+    width: auto;
+    height: 40%;
+}
+.proteines {
+    background-color: rgb(97, 111, 87);
+}
+.legumes {
+    background-color: rgb(159, 173, 48);
+}
+.feculents {
+    background-color: rgb(207, 189, 25);
+}
+
+.informations {
+    display: flex;
+    justify-content: left;
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+}
+.proteines,
+.legumes,
+.feculents {
+    font-family: "kaguraregular";
+    font-size: 145%; /*La taille de la police*/
+    justify-content: left;
+    border-radius: 10px;
+    margin: 2px; /*Pour séparer les case d'information*/
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px; /*Les paddings sont là pour aranger la taille des contoure des information par rapport aux texte qui sont dans la boîte */
+    padding-left: 2px;
+    width: 70px;
+    height: 25px;
+}
