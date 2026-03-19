@@ -1,12 +1,16 @@
 FROM nginx:alpine
 
-# Delete default config
+# Clean default HTML
 RUN rm -rf /usr/share/nginx/html/*
 
 # Copy project
-COPY . /usr/share/nginx/html
+COPY index.html /usr/share/nginx/html/
+COPY style/ /usr/share/nginx/html/css/
+COPY script/ /usr/share/nginx/html/js/
+COPY img/ /usr/share/nginx/html/img/
+
+# Permissions
+RUN chmod -R 755 /usr/share/nginx/html
 
 EXPOSE 80
-
-# Launch nginx
 CMD ["nginx", "-g", "daemon off;"]
